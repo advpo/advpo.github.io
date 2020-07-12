@@ -1,0 +1,478 @@
+<?php require("libs/fetch_data.php");?>
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<title>ADVPO</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<link id="browser_favicon" rel="shortcut icon" href="blogadmin/images/<?php geticon("titles"); ?>">
+	<meta charset="utf-8" name="description" content="we are disability organization based in kampala uganda advocating for rights and well being of people with disability and the elderly">
+	<meta name="keywords" content="advpo,disability,disabilities,kampala,uganda, donor, donation, elderly, support, agali awamu disabled and vulnerable persons organization" />
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" href="css/jquery.desoslide.css">
+	<link href="css/style.css" rel='stylesheet' type='text/css' />
+	<link href="css/fontawesome-all.css" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800"
+	rel="stylesheet">
+	
+	
+	
+	
+	
+	<!--owl carousel assests-->
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+	<script src="js/owl.carousel.js"></script>
+		<script>
+			$(document).ready(function() {
+				$("#owl-demo").owlCarousel({
+					items : 4,
+					lazyLoad : true,
+					autoPlay : true,
+					navigation : true,
+					navigationText : ["",""],
+					rewindNav : false,
+					scrollPerPage : false,
+					pagination : false,
+					paginationNumbers : false,
+				});
+			});
+		</script>
+	<!--font awesome-->
+	
+	
+	
+</head>
+
+<body>
+	<?php include("header.php");?>
+	<?php include("banner.php");?><!--
+	<section class="bottom-slider">
+		<div class="course_demo1">
+			<ul id="flexiselDemo1">
+				<?php getbottomsliderposts("blogs");?>
+			</ul>
+		</div>
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="embed-responsive embed-responsive-21by9">
+							<iframe src="https://www.youtube.com"></iframe>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--/main-->
+	<section class="main-content-w3layouts-agileits">
+		<div class="container">
+			<div class="row">
+				<!--left-->
+				<div class="col-lg-8 left-blog-info-w3layouts-agileits text-left">
+					<!--grid blogs below--><!--
+					<div class="blog-girds-sec">
+						<div class="row">
+							<?php getblogridposts("blogs");?>
+							<!--bloggrids-
+						</div>
+					</div>-->
+					<div class="blog-grid-top">
+
+						<div class="blog_info_left_grid">
+							<a href="single.html">
+								<img src="images/b555.jpg" class="img-fluid" alt="">
+							</a>
+						</div>
+						<h3 align="center">
+							WHO ARE WE
+						</h3>
+						<p align="justify">AGALI AWAMU DISABLED AND VULNERABLE PERSONS ORGANISATION (ADVPO) Is a community based organization, non-profit, non-discriminative politically,ethenically and religiously that was started in the year 2002 with an aim of promoting better living conditions for people with disabilities, vulnerable and less privilaged. These groups were neglected from development programs, hence the emmergency of this organization as a result of extensive research and analysis that indicated the chronic improverished lifestyle faced by disabled and disadvantaged people</p>
+					
+					
+
+						
+						<h3 align="center">
+							OUR MISSION AND VISION
+						</h3>
+						<p align="justify">"Transforming the lives of person's with disability and vulnerable population in the slums into a hopeful population to a better one as well as shedding away stigma that accompanies disability and vulnerability"</p>
+						<p align="justify">"To advocate for social, political and economic reforms in order to improve the livelihoods of persons with all sorts of disability and vulnerability in slum areas"</p>
+					</div>
+				</div>
+				<!--//left-->
+				<!--right-->
+				<aside class="col-lg-4 agileits-w3ls-right-blog-con text-right">
+					<div class="right-blog-info text-left">
+						<h4><strong>Blog Latest</strong></h4>
+						<ul class="list-group single">
+							<?php countcategories();?>
+						</ul>
+						<div class="tech-btm widget_social">
+							<h4>Stay Connected</h4>
+							<ul>
+
+								<li>
+									<a class="twitter" href="@advpo_ug">
+										<i class="fab fa-twitter"></i>
+										<span class="count"></span> Twitter</a>
+									</li>
+									<li>
+										<a class="facebook" href="agali awamu disabled and vulnerable persons organization">
+											<i class="fab fa-facebook-f"></i>
+											<span class="count"></span> Facebook</a>
+										</li>
+										<li>
+											<a class="dribble" href="agali awamu disabled">
+												<i class="fab fa-instagram"></i>
+
+												<span class="count"></span> Instagram</a>
+											</li>
+											<li>
+												<a class="pin" href="agali awamu disabled and vulnerable organization">
+													<i class="fab fa-linkedin"></i>
+													<span class="count"></span> Linkedin</a>
+												</li>
+
+											</ul>
+										</div>
+										<div class="tech-btm">
+											<h4>Older Posts</h4>
+											<?php getolderposts("blogs");?>
+											<!--olderpostsendhere-->
+										</div>
+									</div>
+								</aside>
+								<!--//right-->
+							</div>
+						</div>
+					</section>
+					<!--//main-->
+					<!--/middle-->
+					<!--<section >
+						<!--<div class="container">
+							<div class="row inner-sec">
+								<div class="col-md-4 news-left">
+									<ul id="demo1_thumbs" class="list-inline">
+										<!--get latest four--
+										<?php getfour("blogs");?>
+									</ul>
+								</div>
+								<div id="demo1_main_image" class="col-md-8  news-right"></div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+						
+						
+						
+						
+						<div class="main_btm">
+		<div class="container">
+			<div class="main row">
+				<div class="col-md-6 content_left">
+					<img src="images/" alt ="" class="img-responsive">
+				</div>
+				<div class="col-md-6 content_right">
+					<h4>Our Work</h4>
+					<p class="para">People with disabilities, vulnerability, less privileged need Health care accessibility, food, clothing, Entrepreneurial skills financing to start income generating activities for households with a strategic sustainable workplan. This reduces a major poverty factor viscous cycle.</p>
+					<p class="para">The organization is seeking to bridge the gap by developing collaboration with individuals and associates interested in supporting, advocating and employing disabled and disadvantanged persons Programs right from grass root, slums, upcountry communities by identifying and mobilizing targeted beneficiaries. The organization embraces reducing of poverty in disabled and vulnerable persons</p>
+				</div>
+			</div>
+			<!--start img carosal--
+			
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+					<div class="main_btm">
+		<div class="container">
+			<div class="main row">
+				<div class="col-md-3 content_left">
+					<h5 align="center" ><b><a href="donate.php" class="btn btn-primary read-s">Support ADVPO<br> Persons Education</a></b></h5>
+					<br>
+						<br>
+						
+					<p align="center">Thousands of pupil with disabilities in slums cannot afford Quality Education but together with you we can make a difference and we send these children to schools</p>
+				</div>
+				<div class="col-md-3 content_left">
+					<h5 align="center"><b><a href="donate.php" class="btn btn-primary read-s">Support ADVPO<br> Persons Sanitation,<br> Hygiene and Nutrition</a></b></h5>
+					<br>
+					<p align="center">Thousands of our people can not access clean water, two meals a day but together with you we can make a difference</p>
+				</div>
+				<div class="col-md-3 content_left">
+					<h5 align="center"><b><a href="donate.php" class="btn btn-primary read-s">Support ADVPO<br> Persons Sustainable<br> Household Income</a></b></h5>
+					<br>
+					<p align="center">ADVPO's Sustainable household income program provides employable skills, incentives and mentorship that consoles disabled and disadvantaged people</p>
+				</div>
+				<div class="col-md-3 content_right">
+					<h5 align="center"><b><a href="donate.php" class="btn btn-primary read-s">Support ADVPO<br> Persons Health Care</a><b></h5>
+					<br>
+						<br>
+						
+					<p align="center">Thousands of our people can not afford health services fees hence living a unhealthy life but together with you we can make a difference</p>
+					
+				</div>
+			</div>
+			--start img carosal-
+			
+
+		</div>
+	</div>	
+						
+	
+
+					</section>-->
+					
+					
+					
+					
+				<!---price plan--->
+				<section id="price">
+					<div class="container">
+						<h1></h1>
+						<div class="row">
+							<div class="col-md-3">
+								<div class="single-price">
+									<div class="price-head">
+										<h3>Support ADVPO</h3>
+										<p><span>Persons Education</span></p>
+									</div>
+									<div class="price-content">
+										<p>Thousands of pupil with disabilities in slums cannot afford Quality Education but together with you we can make a difference and we send these children to schools
+										<br/>
+										<br/>
+										
+										
+										</p>
+									</div>
+									<div class="price-button">
+										<a class="buy-btn" href="donate.php" style="text-decoration: none!important; color: #fff!important;" >Donate</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="single-price">
+									<div class="price-head">
+										<h3>Support ADVPO</h3>
+										<p><span>Sanitation,Hygiene and Nutrition</span></p>
+									</div>
+									<div class="price-content">
+										<p>Thousands of our people can not access clean water, two meals a day but together with you we can make a difference
+										<br/>
+										<br/>
+										<br/>
+										
+										</p>
+									</div>
+									<div class="price-button">
+										<a class="buy-btn" href="donate.php" style="text-decoration: none!important; color: #fff!important;">Donate</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="single-price">
+									<div class="price-head">
+										<h3>Support ADVPO</h3>
+										<p><span>Sustainable Household Income</span></p>
+									</div>
+									<div class="price-content">
+										<p>ADVPO's Sustainable household income program provides employable skills, incentives and mentorship that consoles disabled and disadvantaged people
+										</p>
+									</div>
+									<div class="price-button">
+										<a class="buy-btn" href="donate.php" style="text-decoration: none!important; color: #fff!important;">Donate</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="single-price">
+									<div class="price-head">
+										<h3>Support ADVPO</h3>
+										<p><span>Health Care</span></p>
+									</div>
+									<div class="price-content">
+										<p>Thousands of our people can not afford health services fees hence living a unhealthy life but together with you we can make a difference
+										<br/>
+										<br/>
+										<br/>
+										</p>
+									</div>
+									<div class="price-button">
+										<a class="buy-btn" href="donate.php" style="text-decoration: none!important; color: #fff!important;">Donate</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!---end price plan--->
+					
+					
+					
+					
+					<!--//middle--
+					<!----
+					<section class="main-content-w3layouts-agileits">
+						<div class="container">
+							<div class="row">
+								<!--left--
+								<div class="col-lg-8 left-blog-info-w3layouts-agileits text-left">
+									<?php getonelatest("blogs");?>
+								</div>
+								<!--//left--
+								<!--right--
+								<aside class="col-lg-4 agileits-w3ls-right-blog-con text-left">
+									<div class="tech-btm">
+										<h4>Editor's Choice</h4>
+										
+										<?php geteditorschoice("editors_choice"); ?>
+										
+									</div>
+									
+								</aside>
+								<!--//right--
+							</div>
+						</div>
+					</section>
+					<!--//main-->
+					<?php include("footer.php");?>
+					<!---->
+					<!-- js -->
+					<script src="js/jquery-2.2.3.min.js"></script>
+					<!-- //js -->
+					<!-- desoslide-JavaScript -->
+					<script src="js/jquery.desoslide.js"></script>
+					<script>
+						$('#demo1_thumbs').desoSlide({
+							main: {
+								container: '#demo1_main_image',
+								cssClass: 'img-responsive'
+							},
+							effect: 'sideFade',
+							caption: true
+						});
+					</script>
+
+					<!-- requried-jsfiles-for owl -->
+					<script>
+						$(window).load(function () {
+							$("#flexiselDemo1").flexisel({
+								visibleItems: 3,
+								animationSpeed: 1000,
+								autoPlay: true,
+								autoPlaySpeed: 3000,
+								pauseOnHover: true,
+								enableResponsiveBreakpoints: true,
+								responsiveBreakpoints: {
+									portrait: {
+										changePoint: 480,
+										visibleItems: 1
+									},
+									landscape: {
+										changePoint: 640,
+										visibleItems: 2
+									},
+									tablet: {
+										changePoint: 768,
+										visibleItems: 3
+									}
+								}
+							});
+
+						});
+					</script>
+					<script>
+						$(window).load(function () {
+							$("#flexiselDemo2").flexisel({
+								visibleItems: 3,
+								animationSpeed: 1000,
+								autoPlay: true,
+								autoPlaySpeed: 3000,
+								pauseOnHover: true,
+								enableResponsiveBreakpoints: true,
+								responsiveBreakpoints: {
+									portrait: {
+										changePoint: 480,
+										visibleItems: 1
+									},
+									landscape: {
+										changePoint: 640,
+										visibleItems: 2
+									},
+									tablet: {
+										changePoint: 768,
+										visibleItems: 3
+									}
+								}
+							});
+
+						});
+					</script>
+					<script src="js/jquery.flexisel.js"></script>
+					<!-- //password-script -->
+					<!--/ start-smoth-scrolling -->
+					<script src="js/move-top.js"></script>
+					<script src="js/easing.js"></script>
+					<script>
+						jQuery(document).ready(function ($) {
+							$(".scroll").click(function (event) {
+								event.preventDefault();
+								$('html,body').animate({
+									scrollTop: $(this.hash).offset().top
+								}, 900);
+							});
+						});
+					</script>
+					<!--// end-smoth-scrolling -->
+
+					<script>
+						$(document).ready(function () {
+							
+							var defaults = {
+							  			containerID: 'toTop', // fading element id
+										containerHoverID: 'toTopHover', // fading element hover id
+										scrollSpeed: 1200,
+										easingType: 'linear' 
+									};
+									
+
+									$().UItoTop({
+										easingType: 'easeOutQuart'
+									});
+
+								});
+							</script>
+							<a href="#home" class="scroll" id="toTop" style="display: block;">
+								<span id="toTopHover" style="opacity: 1;"> </span>
+							</a>
+
+							<!-- //Custom-JavaScript-File-Links -->
+							<script src="js/bootstrap.js"></script>
+
+
+						</body>
+
+						</html>
